@@ -1,6 +1,6 @@
-# React useContext Deep Dive: Night Vision Goggles
+# React useContext Deep Dive
 
-[![Lecture Video](https://img.shields.io/badge/Lecture-Video-red)](VIDEO_LINK_PLACEHOLDER)
+[![Lecture Video](https://img.shields.io/badge/Lecture-Video-red)](https://drive.google.com/file/d/1Xy-oK3R5tV64OPprB8PGCQXX-XA9E5ss/view?usp=drive_link)
 
 ## Overview
 
@@ -21,16 +21,16 @@ This project demonstrates the power of React's Context API through a practical e
 
 ## Project Structure
 
-```
+```bash
 src/
 ├── components/
 │   ├── GameSession.jsx    # Main component with Context Provider
-│   ├── LayoutWrapper.jsx  # Intermediate component (no prop drilling)
-│   ├── Dashboard.jsx      # Container component (no prop drilling)
-│   └── Item.jsx          # Consumer component using Context
+│   ├── LayoutWrapper.jsx  # Intermediate component
+│   ├── Dashboard.jsx      # Container component
+│   └── Item.jsx           # Consumer component using Context
 ├── context/
-│   └── GameContext.js    # Context definition
-└── App.jsx              # Root component
+│   └── GameContext.js     # Context definition
+└── App.jsx                # Root component
 ```
 
 ## Key Concepts
@@ -58,10 +58,13 @@ src/
 
 1. Clone this repository
 2. Install dependencies:
+
    ```bash
    pnpm install
    ```
+
 3. Start the development server:
+
    ```bash
    pnpm dev
    ```
@@ -88,7 +91,9 @@ export default GameContext;
 
 ```javascript
 // In GameSession.jsx
-<GameContext.Provider value={contextValue}>{/* Your components */}</GameContext.Provider>
+<GameContext.Provider value={contextValue}>
+  {/* Your components */}
+</GameContext.Provider>
 ```
 
 ### Consuming Context
