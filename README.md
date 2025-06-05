@@ -60,13 +60,13 @@ src/
 2. Install dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. Start the development server:
 
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 ## Code Examples
