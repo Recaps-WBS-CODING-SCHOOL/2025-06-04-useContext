@@ -6,6 +6,8 @@
 
 This project demonstrates the power of React's Context API through a practical example of a "Night Vision Goggles" application. You'll learn how to solve the prop drilling problem using `useContext` and understand when and how to use Context in your React applications.
 
+- **[Recap Session Video](https://drive.google.com/file/d/1Xy-oK3R5tV64OPprB8PGCQXX-XA9E5ss/view?usp=drive_link)** - Watch the lecture
+
 ## Visual Guide
 
 ![useContext Concept](public/useContext.png)
